@@ -4,7 +4,7 @@
 
 -- Add this mod to trusted_mods
 -- Open : minetest.confg
--- Add : secure.trusted_mods = nekroweb
+-- Add : secure.trusted_mods = requesthttpapi
 
 local load_time_start = os.clock()
 
@@ -67,7 +67,7 @@ minetest.register_chatcommand("locatePlayer", {
 
 
 local time = math.floor(tonumber(os.clock()-load_time_start)*100+0.5)/100
-local msg = "[nekroweb] loaded after ca. "..time
+local msg = "[Request Http API Tweeter] Loaded after ca. " .. time
 if time > 0.05 then
 	print(msg)
 else
